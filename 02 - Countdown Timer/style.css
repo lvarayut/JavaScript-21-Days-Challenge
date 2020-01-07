@@ -1,0 +1,30 @@
+body {
+  background-image: url('./background.jpg');
+  background-size: cover;
+  color: #ffffff;
+
+  height: 100vh;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+.countdown {
+  display: inline-block;
+  font-size: 1.7em;
+  padding: 1em;
+}
+
+.countdown span {
+  display: block;
+  font-size: 5rem;
+}
