@@ -1,0 +1,27 @@
+body {
+  background: #64b0ff url('./scene.png') repeat-x fixed bottom;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winning {
+  color: #FFF;
+  font-size: 6em;;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.duck {
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: crosshair;
+
+  position: absolute;
+  height: 120px;
+  width: 120px;
+}
