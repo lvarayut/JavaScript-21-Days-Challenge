@@ -1,0 +1,64 @@
+:root {
+  --good-aqi-color: #b0e767;
+  --medium-aqi-color: #fe9b56;
+  --bad-aqi-color: #fe6a69;
+  --current-aqi-color: var(--good-aqi-color);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #515154;
+}
+
+.aqi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background-color: var(--current-aqi-color);
+
+  width: 80vw;
+  height: 10vh;
+  padding: 20px 0;
+
+  border: 1px solid var(--current-aqi-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.aqi > h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.city {
+  margin: 0;
+  font-size: 2em;
+}
+
+.state-country {
+  margin-top: 0;
+}
+
+.info {
+  display: flex;
+  width: 80vw;
+
+  border: 1px solid #e6e6e6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info > * {
+  border-right: 1px solid #e6e6e6;
+  padding: 20px;
+  flex: 1;
+}
