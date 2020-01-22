@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+footer {
+  border-top: 1px solid #ebebeb;
+  color: #767676;
+
+  padding: 50px;
+  text-align: center;
+}
+
+img {
+  width: 100vw;
+  height: 80vh;
+
+  object-fit: cover;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 20vh;
+
+  opacity: 0;
+  transform: translateY(25px);
+  transition: 0.4s all linear;
+}
+
+.text > h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.text > p {
+  color: #888888;
+
+  margin: 0;
+  padding: 10px 30px;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
