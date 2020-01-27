@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>15 - Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <body>
+      <div class="container">
+        <div class="cover">
+          <img src="./cover.jpg" />
+        </div>
+
+        <div class="music">
+          <div class="title">Cute Music</div>
+          <div class="singer">Bensound</div>
+        </div>
+
+        <div class="control">
+          <div class="timeline">
+            <span class="start-time">0:00</span>
+            <input type="range" step="1" class="progress-bar" value="0" />
+
+            <audio>
+              <source src="./cute.mp3" type="audio/mp3" />
+            </audio>
+
+            <span class="end-time">0:00</span>
+          </div>
+          <button class="play"></button>
+        </div>
+      </div>
+
+      <script src="./start.js"></script>
+    </body>
+  </head>
+</html>
