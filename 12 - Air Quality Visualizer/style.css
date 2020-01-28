@@ -16,6 +16,14 @@ body {
   text-align: center;
 
   color: #515154;
+
+  background: #43cea2;
+  background: linear-gradient(45deg, #185a9d, #43cea2);
+}
+
+.card {
+  width: 500px;
+  box-shadow: 0 10px 10px 0 #515154;
 }
 
 .aqi {
@@ -25,7 +33,6 @@ body {
   color: #ffffff;
   background-color: var(--current-aqi-color);
 
-  width: 80vw;
   height: 10vh;
   padding: 20px 0;
 
@@ -39,6 +46,10 @@ body {
   font-size: 3em;
 }
 
+.location {
+  color: #ffffff;
+}
+
 .city {
   margin: 0;
   font-size: 2em;
@@ -50,7 +61,7 @@ body {
 
 .info {
   display: flex;
-  width: 80vw;
+  background-color: #ffffff;
 
   border: 1px solid #e6e6e6;
   border-bottom-left-radius: 10px;
@@ -61,4 +72,8 @@ body {
   border-right: 1px solid #e6e6e6;
   padding: 20px;
   flex: 1;
+}
+
+.info > *:last-child {
+  border: none;
 }
