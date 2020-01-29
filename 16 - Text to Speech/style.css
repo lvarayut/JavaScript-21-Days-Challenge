@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100vw;
+  height: 90vh;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+
+  margin: 10px;
+  box-shadow: 0 5px 5px 0 #515154;
+
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.title {
+  color: #464646;
+  font-family: cursive;
+  font-size: 3em;
+
+  margin-bottom: 0;
+}
