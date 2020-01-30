@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control {
+  border: none;
+  outline: none;
+}
+
+.title {
+  color: #ffffff;
+  background-color: #EA4F3E;
+
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+
+  font-family: cursive;
+  text-align: center;
+}
+
+.text {
+  width: 100vw;
+  padding: 20px;
+  flex: 1;
+}
+
+.record,
+.pause {
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10%;
+}
+
+.pause {
+  background: url('./pause.png') 0 0 / contain no-repeat;
+}
+
+.record {
+  background: url('./record.png') 0 0 / contain no-repeat;
+}
