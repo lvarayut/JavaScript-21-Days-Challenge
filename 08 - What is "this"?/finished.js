@@ -36,11 +36,11 @@
   }
   function Person (name) {
     this.name = name
-
-    printName();
+    this.printName = printName;
   }
 
   const varayut = new Person('Varayut');
+  varayut.printName();
 
 
   // 3. call(), apply(), and bind()
@@ -57,8 +57,8 @@
     this.city = city;
 
     printName(this.nationality, this.city);
-    printName.call(this, 'Thai', 'Bangkok');
-    printName.apply(this, ['Thai', 'Bangkok']);
+    printName.call(this, this.nationality, this.city);
+    printName.apply(this, [this.nationality, this.city]);
 
     const printVarayutName = printName.bind(this);
     printVarayutName('Thai', 'Bangkok');
